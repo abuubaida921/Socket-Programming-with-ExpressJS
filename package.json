@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/abuubaida921/Socket-Programming-with-ExpressJS/issues"
   },
-  "homepage": "https://github.com/abuubaida921/Socket-Programming-with-ExpressJS#readme"
+  "homepage": "https://github.com/abuubaida921/Socket-Programming-with-ExpressJS#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
 }
