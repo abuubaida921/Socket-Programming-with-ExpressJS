@@ -1,0 +1,19 @@
+{
+  "name": "socket-programming-with-expressjs",
+  "version": "1.0.0",
+  "description": "This is a expressjs project for socket programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/abuubaida921/Socket-Programming-with-ExpressJS.git"
+  },
+  "author": "Abu Ubaida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abuubaida921/Socket-Programming-with-ExpressJS/issues"
+  },
+  "homepage": "https://github.com/abuubaida921/Socket-Programming-with-ExpressJS#readme"
+}
