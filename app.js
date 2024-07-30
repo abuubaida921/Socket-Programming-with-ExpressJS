@@ -8,6 +8,11 @@ app.get('/', function(req, res){
 
 //Whenever someone connects this gets executed
 io.on('connection', function(socket){
+    //receive event from client side
+    socket.on('clientEvent', function(data){
+       console.log(data);
+    });
+    
     console.log('A user connected');
     
     // Send a message after a timeout of 4seconds
@@ -20,6 +25,7 @@ io.on('connection', function(socket){
         // Sending an object when emmiting an event
         socket.emit('testerEvent', { description: 'A custom event named testerEvent!'});
     }, 6000);
+
 
     //Whenever someone disconnects this piece of code executed
     socket.on('disconnect', function () {
