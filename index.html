@@ -6,6 +6,7 @@
    <script>
       var socket = io();
       socket.on('message', function(data){document.write(data)});
+      socket.on('testerEvent', function(data){document.write(data.description)});
    </script>
 
    <body>This is a Hello world html file</body>
