@@ -12,7 +12,7 @@ io.on('connection', function(socket){
     socket.on('clientEvent', function(data){
        console.log(data);
     });
-    
+
     console.log('A user connected');
     
     // Send a message after a timeout of 4seconds
