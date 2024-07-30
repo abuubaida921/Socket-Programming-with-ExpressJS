@@ -11,10 +11,11 @@ var clients = 0;
 //Whenever someone connects this gets executed
 io.on('connection', function (socket) {
     clients++;
-    io.sockets.emit('broadcast', { description: clients + ' clients connected!' });
+    socket.emit('newclientconnect',{ description: 'Hey, welcome!'});
+    socket.broadcast.emit('newclientconnect',{ description: clients + ' clients connected!'})
     socket.on('disconnect', function () {
-        clients--;
-        io.sockets.emit('broadcast', { description: clients + ' clients connected!' });
+       clients--;
+       socket.broadcast.emit('newclientconnect',{ description: clients + ' clients connected!'})
     });
 
     //receive event from client side
