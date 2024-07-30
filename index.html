@@ -7,15 +7,20 @@
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
-    var socket = io();
+    var socket = io('/homepage');
     //   socket.on('message', function(data){document.write(data)});
     //   socket.on('testerEvent', function(data){document.write(data.description)});
     //   socket.emit('clientEvent', 'Sent an event from the client!');
     // socket.on('broadcast', function (data) { document.body.innerHTML = ''; document.write(data.description); });
-    socket.on('newclientconnect',function(data){
-               document.body.innerHTML = '';
-               document.write(data.description);
+    // socket.on('newclientconnect',function(data){
+    //            document.body.innerHTML = '';
+    //            document.write(data.description);
+    //   });]
+      socket.on('hi',function(data){
+         document.body.innerHTML = '';
+         document.write(data);
       });
+
 </script>
 
 <body>This is a Hello world html file</body>
